@@ -1,5 +1,5 @@
 # poetry_install_error
-
+official bug report available at https://github.com/python-poetry/poetry/issues/8488
 
 
 - **Poetry version**: 1.6.1
