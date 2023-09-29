@@ -1,0 +1,1121 @@
+
+Remove-Item: <project folder>\poetry_install_error\reproduce_github_poetry_issue.ps1:63
+Line |
+  63 |      remove-Item -Recurse -Force "$ENV:LOCALAPPDATA\pypoetry"
+     |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '<user profile>\AppData\Local\pypoetry' because it does not exist.
+
+Retrieving Poetry metadata
+
+# Welcome to Poetry!
+
+This will download and install the latest version of Poetry,
+a dependency and package manager for Python.
+
+It will add the `poetry` command to Poetry's bin directory, located at:
+
+<user profile>\AppData\Roaming\Python\Scripts
+
+You can uninstall at any time by executing this script with the --uninstall option,
+and these changes will be reverted.
+
+Installing Poetry (1.6.1)
+Installing Poetry (1.6.1): Creating environment
+Installing Poetry (1.6.1): Installing Poetry
+Installing Poetry (1.6.1): Creating script
+Installing Poetry (1.6.1): Done
+
+Poetry (1.6.1) is installed now. Great!
+
+To get started you need Poetry's bin directory (<user profile>\AppData\Roaming\Python\Scripts) in your `PATH`
+environment variable.
+
+Alternatively, you can call Poetry explicitly with `<user profile>\AppData\Roaming\Python\Scripts\poetry`.
+
+You can test that everything is set up by executing:
+
+`poetry --version`
+
+
+Remove-Item: <project folder>\poetry_install_error\reproduce_github_poetry_issue.ps1:25
+Line |
+  25 |      remove-Item -Recurse -Force "$ENV:LOCALAPPDATA\pypoetry"
+     |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot find path '<user profile>\AppData\Local\pypoetry' because it does not exist.
+
+Python 3.8.10
+Poetry (version 1.6.1)
+Creating virtualenv poetry-install-error-prj1-3e0HscYO-py3.8 in <user profile>\AppData\Local\pypoetry\Cache\virtualenvs
+Updating dependencies
+Resolving dependencies...
+
+Writing lock file
+prj1 (lock): True
+
+    Directory: <project folder>\poetry_install_error\prj1
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          29.09.2023    10:10          38415 poetry.lock
+Using virtualenv: <user profile>\AppData\Local\pypoetry\Cache\virtualenvs\poetry-install-error-prj1-3e0HscYO-py3.8
+Installing dependencies from lock file
+
+Finding the necessary packages for the current system
+
+Package operations: 11 installs, 0 updates, 0 removals
+
+  ò Installing pycparser (2.21)
+[keyring.backend] Loading KWallet
+[keyring.backend] Loading SecretService
+[keyring.backend] Loading Windows
+[win32ctypes.core.ctypes] Loaded ctypes backend
+[keyring.backend] Loading chainer
+[keyring.backend] Loading libsecret
+[keyring.backend] Loading macOS
+Creating new session for pypi.org
+Creating new session for files.pythonhosted.org
+[urllib3.connectionpool] Starting new HTTPS connection (1): files.pythonhosted.org:443
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl HTTP/1.1" 200 118697
+[filelock] Attempting to acquire lock 1632702944112 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\7\5\8\e\0\758e07d7bdfb8212737d84f4f36245f9f40d44fd1c9ad0df0cf25708.lock
+[filelock] Lock 1632702944112 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\7\5\8\e\0\758e07d7bdfb8212737d84f4f36245f9f40d44fd1c9ad0df0cf25708.lock
+[filelock] Attempting to release lock 1632702944112 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\7\5\8\e\0\758e07d7bdfb8212737d84f4f36245f9f40d44fd1c9ad0df0cf25708.lock
+[filelock] Lock 1632702944112 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\7\5\8\e\0\758e07d7bdfb8212737d84f4f36245f9f40d44fd1c9ad0df0cf25708.lock
+  ò Installing cffi (1.15.1)
+Skipping wheel cffi-1.15.1-cp27-cp27m-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27m-manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27m-manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27mu-manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27mu-manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27m-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-macosx_11_0_arm64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-manylinux_2_17_s390x.manylinux2014_s390x.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-musllinux_1_1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-win_amd64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-macosx_11_0_arm64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-musllinux_1_1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-win_amd64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-manylinux_2_17_s390x.manylinux2014_s390x.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-manylinux_2_17_s390x.manylinux2014_s390x.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-manylinux_2_17_s390x.manylinux2014_s390x.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-macosx_11_0_arm64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-manylinux_2_17_s390x.manylinux2014_s390x.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-musllinux_1_1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-win_amd64.whl as this is not supported by the current environment
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/c9/e3/0a52838832408cfbbf3a59cb19bcd17e64eb33795c9710ca7d29ae10b5b7/cffi-1.15.1-cp38-cp38-win_amd64.whl HTTP/1.1" 200 178835
+[filelock] Attempting to acquire lock 1632702945408 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\c\4\a\0\0\c4a008080752672074f98c444ee83787774d4f9fecf56329648fd609.lock
+[filelock] Lock 1632702945408 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\c\4\a\0\0\c4a008080752672074f98c444ee83787774d4f9fecf56329648fd609.lock
+[filelock] Attempting to release lock 1632702945408 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\c\4\a\0\0\c4a008080752672074f98c444ee83787774d4f9fecf56329648fd609.lock
+[filelock] Lock 1632702945408 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\c\4\a\0\0\c4a008080752672074f98c444ee83787774d4f9fecf56329648fd609.lock
+  ò Installing argon2-cffi-bindings (21.2.0)
+  ò Installing six (1.16.0)
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-musllinux_1_1_i686.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-win32.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp38-abi3-macosx_10_9_universal2.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp37-pypy37_pp73-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp37-pypy37_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp37-pypy37_pp73-win_amd64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp38-pypy38_pp73-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp38-pypy38_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp38-pypy38_pp73-win_amd64.whl as this is not supported by the current environment
+[urllib3.connectionpool] Starting new HTTPS connection (2): files.pythonhosted.org:443
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl HTTP/1.1" 200 11053
+[filelock] Attempting to acquire lock 1632702325664 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\3\f\4\9\c\3f49c19c42525485da2c265d82244e942d3619ff5626136ee23992d0.lock
+[filelock] Lock 1632702325664 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\3\f\4\9\c\3f49c19c42525485da2c265d82244e942d3619ff5626136ee23992d0.lock
+[filelock] Attempting to release lock 1632702325664 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\3\f\4\9\c\3f49c19c42525485da2c265d82244e942d3619ff5626136ee23992d0.lock
+[filelock] Lock 1632702325664 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\3\f\4\9\c\3f49c19c42525485da2c265d82244e942d3619ff5626136ee23992d0.lock
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/37/2c/e34e47c7dee97ba6f01a6203e0383e15b60fb85d78ac9a15cd066f6fe28b/argon2_cffi_bindings-21.2.0-cp36-abi3-win_amd64.whl HTTP/1.1" 200 30817
+[filelock] Attempting to acquire lock 1632702324944 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\0\f\1\f\2\0f1f2b3725d49be5385f2cdddf5a200845a9ce36352bf6b55e2abb3d.lock
+[filelock] Lock 1632702324944 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\0\f\1\f\2\0f1f2b3725d49be5385f2cdddf5a200845a9ce36352bf6b55e2abb3d.lock
+[filelock] Attempting to release lock 1632702324944 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\0\f\1\f\2\0f1f2b3725d49be5385f2cdddf5a200845a9ce36352bf6b55e2abb3d.lock
+[filelock] Lock 1632702324944 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\0\f\1\f\2\0f1f2b3725d49be5385f2cdddf5a200845a9ce36352bf6b55e2abb3d.lock
+  ò Installing argon2-cffi (23.1.0)
+  ò Installing construct (2.10.54)
+  ò Installing future (0.18.3)
+  ò Installing lxml (4.9.3)
+  ò Installing pycryptodomex (3.19.0)
+  ò Installing python-dateutil (2.8.2)
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-manylinux2010_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-manylinux2010_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27mu-manylinux2010_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27mu-manylinux2010_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27mu-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27mu-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-win32.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-macosx_10_9_universal2.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-musllinux_1_1_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-win32.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp27-pypy_73-manylinux2010_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp27-pypy_73-win32.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp310-pypy310_pp73-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp310-pypy310_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp310-pypy310_pp73-win_amd64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp39-pypy39_pp73-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp39-pypy39_pp73-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27m-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27m-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27m-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27mu-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27mu-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27m-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-manylinux_2_28_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-macosx_11_0_universal2.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-manylinux_2_28_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-macosx_11_0_universal2.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-manylinux_2_28_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/a4/6a/e8a041599e78b6b3752da48000b14c8d1e8a04ded09c88c714ba047f34f5/argon2_cffi-23.1.0-py3-none-any.whl HTTP/1.1" 200 15124
+Skipping wheel lxml-4.9.3-cp312-cp312-win_amd64.whl as this is not supported by the current environment
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/8f/2e/cf6accf7415237d6faeeebdc7832023c90e0282aa16fd3263db0eb4715ec/future-0.18.3.tar.gz HTTP/1.1" 200 840896
+Skipping wheel lxml-4.9.3-cp35-cp35m-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp35-cp35m-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp35-cp35m-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp35-cp35m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.manylinux_2_24_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.manylinux_2_24_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_28_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp310-pypy310_pp73-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp37-pypy37_pp73-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp37-pypy37_pp73-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp38-pypy38_pp73-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp38-pypy38_pp73-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp38-pypy38_pp73-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp38-pypy38_pp73-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp39-pypy39_pp73-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp39-pypy39_pp73-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp39-pypy39_pp73-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp39-pypy39_pp73-win_amd64.whl as this is not supported by the current environment
+[urllib3.connectionpool] Starting new HTTPS connection (3): files.pythonhosted.org:443
+[urllib3.connectionpool] Starting new HTTPS connection (4): files.pythonhosted.org:443
+[urllib3.connectionpool] Starting new HTTPS connection (5): files.pythonhosted.org:443
+[urllib3.connectionpool] Starting new HTTPS connection (6): files.pythonhosted.org:443
+[filelock] Attempting to acquire lock 1632703078896 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\a\4\c\4\5\a4c45d2ebf158e53840119637f6e8c62368203df03bfa979be77f373.lock
+[filelock] Lock 1632703078896 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\a\4\c\4\5\a4c45d2ebf158e53840119637f6e8c62368203df03bfa979be77f373.lock
+[filelock] Attempting to release lock 1632703078896 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\a\4\c\4\5\a4c45d2ebf158e53840119637f6e8c62368203df03bfa979be77f373.lock
+[filelock] Lock 1632703078896 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\a\4\c\4\5\a4c45d2ebf158e53840119637f6e8c62368203df03bfa979be77f373.lock
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/30/2f/e2e6bad1b80f744cf5c2a6d622e3dee698b43e6c040f980ae0ac0edd5e54/construct-2.10.54.tar.gz HTTP/1.1" 200 55318
+[filelock] Attempting to acquire lock 1632702438368 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\6\e\5\8\66e58e1d5a9871eeb3fdb218dcd42517875cf9d10ed56040988e11fe.lock
+[filelock] Lock 1632702438368 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\6\e\5\8\66e58e1d5a9871eeb3fdb218dcd42517875cf9d10ed56040988e11fe.lock
+[filelock] Attempting to acquire lock 1632702327200 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\2\e\0\a\6\2e0a628105013f9723b8d1fb025cca00432dad4b988e44fe414f7e61.lock
+[filelock] Attempting to release lock 1632702438368 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\6\e\5\8\66e58e1d5a9871eeb3fdb218dcd42517875cf9d10ed56040988e11fe.lock
+[filelock] Lock 1632702327200 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\2\e\0\a\6\2e0a628105013f9723b8d1fb025cca00432dad4b988e44fe414f7e61.lock
+[filelock] Lock 1632702438368 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\6\e\5\8\66e58e1d5a9871eeb3fdb218dcd42517875cf9d10ed56040988e11fe.lock
+[filelock] Attempting to release lock 1632702327200 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\2\e\0\a\6\2e0a628105013f9723b8d1fb025cca00432dad4b988e44fe414f7e61.lock
+[filelock] Lock 1632702327200 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\2\e\0\a\6\2e0a628105013f9723b8d1fb025cca00432dad4b988e44fe414f7e61.lock
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl HTTP/1.1" 200 247702
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/7a/2f/61afbbb627e910d83613f198ceea270376f6708f52a95b534db10c67b4eb/lxml-4.9.3-cp38-cp38-win_amd64.whl HTTP/1.1" 200 3903642
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/3c/a4/81675804055339db8e277f48bf0012b554a2322f15d000caebf7c8d3f011/pycryptodomex-3.19.0-cp35-abi3-win_amd64.whl HTTP/1.1" 200 1743221
+[filelock] Attempting to acquire lock 1632703080000 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\1\5\8\5\6\15856d84ee205815a9da20d464181272415376d8ef0d14a6313288ea.lock
+[filelock] Lock 1632703080000 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\1\5\8\5\6\15856d84ee205815a9da20d464181272415376d8ef0d14a6313288ea.lock
+[filelock] Attempting to release lock 1632703080000 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\1\5\8\5\6\15856d84ee205815a9da20d464181272415376d8ef0d14a6313288ea.lock
+[filelock] Lock 1632703080000 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\1\5\8\5\6\15856d84ee205815a9da20d464181272415376d8ef0d14a6313288ea.lock
+
+  Stack trace:
+
+  8  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:286 in _execute_operation
+      284| 
+      285|             try:
+    > 286|                 result = self._do_execute_operation(operation)
+      287|             except EnvCommandError as e:
+      288|                 if e.e.returncode == -2:
+
+  7  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:386 in _do_execute_operation
+      384|             return 0
+      385| 
+    > 386|         result: int = getattr(self, f"_execute_{method}")(operation)
+      387| 
+      388|         if result != 0:
+
+  6  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:511 in _execute_install
+      509| 
+      510|     def _execute_install(self, operation: Install | Update) -> int:
+    > 511|         status_code = self._install(operation)
+      512| 
+      513|         self._save_url_reference(operation)
+
+  5  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:549 in _install
+      547|             archive = self._download_link(operation, Link(package.source_url))
+      548|         else:
+    > 549|             archive = self._download(operation)
+      550| 
+      551|         operation_message = self.get_operation_message(operation)
+
+  4  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:753 in _download
+      751|             self._yanked_warnings.append(message)
+      752| 
+    > 753|         return self._download_link(operation, link)
+      754| 
+      755|     def _download_link(self, operation: Install | Update, link: Link) -> Path:
+
+  3  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:800 in _download_link
+      798|             self._write(operation, message)
+      799| 
+    > 800|             archive = self._chef.prepare(archive, output_dir=output_dir)
+      801| 
+      802|         # Use the original archive to provide the correct hash.
+
+  2  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\chef.py:101 in prepare
+       99|             return self._prepare(archive, destination=destination, editable=editable)
+      100| 
+    > 101|         return self._prepare_sdist(archive, destination=output_dir)
+      102| 
+      103|     def _prepare(
+
+  1  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\chef.py:185 in _prepare_sdist
+      183|             destination.mkdir(parents=True, exist_ok=True)
+      184| 
+    > 185|             return self._prepare(
+      186|                 sdist_dir,
+      187|                 destination,
+
+  ChefBuildError
+
+  Backend 'setuptools.build_meta:__legacy__' is not available.
+
+  at ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\chef.py:147 in _prepare
+      143| 
+      144|                 error = ChefBuildError("\n\n".join(message_parts))
+      145| 
+      146|             if error is not None:
+    > 147|                 raise error from None
+      148| 
+      149|             return path
+      150| 
+      151|     def _prepare_sdist(self, archive: Path, destination: Path | None = None) -> Path:
+
+Note: This error originates from the build backend, and is likely not a problem with poetry but with construct (2.10.54) not supporting PEP 517 builds. You can verify this by running 'pip wheel --use-pep517 "construct (==2.10.54)"'.
+
+prj1 (1st attempt): False
+-a---          29.09.2023    10:10          38415 poetry.lock
+Using virtualenv: <user profile>\AppData\Local\pypoetry\Cache\virtualenvs\poetry-install-error-prj1-3e0HscYO-py3.8
+Installing dependencies from lock file
+
+Finding the necessary packages for the current system
+
+Package operations: 2 installs, 0 updates, 0 removals, 9 skipped
+
+  ò Installing construct (2.10.54)
+[keyring.backend] Loading KWallet
+[keyring.backend] Loading SecretService
+[keyring.backend] Loading Windows
+[win32ctypes.core.ctypes] Loaded ctypes backend
+[keyring.backend] Loading chainer
+[keyring.backend] Loading libsecret
+[keyring.backend] Loading macOS
+Creating new session for pypi.org
+  ò Installing argon2-cffi (23.1.0): Skipped for the following reason: Already installed
+  ò Installing argon2-cffi-bindings (21.2.0): Skipped for the following reason: Already installed
+  ò Installing cffi (1.15.1): Skipped for the following reason: Already installed
+  ò Installing future (0.18.3): Skipped for the following reason: Already installed
+  ò Installing pycparser (2.21): Skipped for the following reason: Already installed
+  ò Installing lxml (4.9.3): Skipped for the following reason: Already installed
+  ò Installing pykeepass (4.0.1)
+  ò Installing pycryptodomex (3.19.0): Skipped for the following reason: Already installed
+  ò Installing python-dateutil (2.8.2): Skipped for the following reason: Already installed
+  ò Installing six (1.16.0): Skipped for the following reason: Already installed
+prj1 (2nd attempt): True
+Using virtualenv: <user profile>\AppData\Local\pypoetry\Cache\virtualenvs\poetry-install-error-prj1-3e0HscYO-py3.8
+Updating dependencies
+Resolving dependencies...
+   1: fact: poetry-install-error-prj1 is 0.0.1
+   1: derived: poetry-install-error-prj1
+   1: fact: poetry-install-error-prj1 depends on pykeepass (4.0.1)
+   1: selecting poetry-install-error-prj1 (0.0.1)
+   1: derived: pykeepass (==4.0.1)
+[keyring.backend] Loading KWallet
+[keyring.backend] Loading SecretService
+[keyring.backend] Loading Windows
+[win32ctypes.core.ctypes] Loaded ctypes backend
+[keyring.backend] Loading chainer
+[keyring.backend] Loading libsecret
+[keyring.backend] Loading macOS
+Creating new session for pypi.org
+Source (PyPI): 1 packages found for pykeepass 4.0.1
+   1: fact: pykeepass (4.0.1) depends on argon2_cffi (*)
+   1: fact: pykeepass (4.0.1) depends on construct (2.10.54)
+   1: fact: pykeepass (4.0.1) depends on future (*)
+   1: fact: pykeepass (4.0.1) depends on lxml (*)
+   1: fact: pykeepass (4.0.1) depends on pycryptodomex (>=3.6.2)
+   1: fact: pykeepass (4.0.1) depends on python-dateutil (*)
+   1: selecting pykeepass (4.0.1)
+   1: derived: python-dateutil
+   1: derived: pycryptodomex (>=3.6.2)
+   1: derived: lxml
+   1: derived: future
+   1: derived: construct (==2.10.54)
+   1: derived: argon2_cffi
+Source (PyPI): 25 packages found for python-dateutil *
+Source (PyPI): 33 packages found for pycryptodomex >=3.6.2
+Source (PyPI): 122 packages found for lxml *
+Source (PyPI): 51 packages found for future *
+Skipping url (https://files.pythonhosted.org/packages/bc/7e/3d9973add2a8a3731fe7ba1e333e6558f04d98c3a7dbd46c0d2c5c0c5b27/construct-2.5.4-reupload.tar.gz) due to invalid version (None)
+Skipping url (https://files.pythonhosted.org/packages/bc/e8/8db5c4d4e4afda5e12a50ba72144e888635aeb329be55806461f6af19bbe/construct-2.5.5-reupload.tar.gz) due to invalid version (None)
+Source (PyPI): 1 packages found for construct 2.10.54
+Source (PyPI): 16 packages found for argon2-cffi *
+   1: selecting construct (2.10.54)
+   1: selecting lxml (4.9.3)
+   1: selecting future (0.18.3)
+   1: selecting pycryptodomex (3.19.0)
+   1: fact: python-dateutil (2.8.2) depends on six (>=1.5)
+   1: selecting python-dateutil (2.8.2)
+   1: derived: six (>=1.5)
+Source (PyPI): 18 packages found for six >=1.5
+   1: selecting six (1.16.0)
+   1: fact: argon2-cffi (23.1.0) depends on argon2-cffi-bindings (*)
+   1: fact: argon2-cffi (23.1.0) depends on typing-extensions (*)
+   1: selecting argon2-cffi (23.1.0)
+   1: derived: typing-extensions
+   1: derived: argon2-cffi-bindings
+Source (PyPI): 27 packages found for typing-extensions *
+Source (PyPI): 2 packages found for argon2-cffi-bindings *
+   1: fact: argon2-cffi-bindings (21.2.0) depends on cffi (>=1.0.1)
+   1: selecting argon2-cffi-bindings (21.2.0)
+   1: derived: cffi (>=1.0.1)
+Source (PyPI): 46 packages found for cffi >=1.0.1
+   1: fact: cffi (1.16.0) requires Python >=3.8
+   1: derived: not cffi (==1.16.0)
+   1: fact: cffi (1.15.1) depends on pycparser (*)
+   1: selecting cffi (1.15.1)
+   1: derived: pycparser
+Source (PyPI): 21 packages found for pycparser *
+   1: selecting pycparser (2.21)
+   1: fact: typing-extensions (4.8.0) requires Python >=3.8
+   1: derived: not typing-extensions (==4.8.0)
+   1: selecting typing-extensions (4.7.1)
+   1: Version solving took 0.433 seconds.
+   1: Tried 1 solutions.
+
+Finding the necessary packages for the current system
+Source (PyPI): 1 packages found for pykeepass 4.0.1
+Source (PyPI): 1 packages found for python-dateutil *
+Source (PyPI): 1 packages found for pycryptodomex >=3.6.2
+Source (PyPI): 1 packages found for lxml *
+Source (PyPI): 1 packages found for future *
+Source (PyPI): 1 packages found for construct 2.10.54
+Source (PyPI): 1 packages found for argon2-cffi *
+Source (PyPI): 1 packages found for six >=1.5
+Source (PyPI): 1 packages found for argon2-cffi-bindings *
+Source (PyPI): 1 packages found for cffi >=1.0.1
+Source (PyPI): 1 packages found for pycparser *
+
+Package operations: 0 installs, 0 updates, 0 removals, 11 skipped
+
+  ò Installing argon2-cffi (23.1.0): Skipped for the following reason: Already installed
+  ò Installing argon2-cffi-bindings (21.2.0): Skipped for the following reason: Already installed
+  ò Installing cffi (1.15.1): Skipped for the following reason: Already installed
+  ò Installing construct (2.10.54): Skipped for the following reason: Already installed
+  ò Installing future (0.18.3): Skipped for the following reason: Already installed
+  ò Installing lxml (4.9.3): Skipped for the following reason: Already installed
+  ò Installing pycparser (2.21): Skipped for the following reason: Already installed
+  ò Installing pycryptodomex (3.19.0): Skipped for the following reason: Already installed
+  ò Installing python-dateutil (2.8.2): Skipped for the following reason: Already installed
+  ò Installing pykeepass (4.0.1): Skipped for the following reason: Already installed
+  ò Installing six (1.16.0): Skipped for the following reason: Already installed
+
+Writing lock file
+prj1 (re-install): True
+Python 3.8.10
+Poetry (version 1.6.1)
+Creating virtualenv poetry-install-erro-prj2-ZcK0sOQd-py3.8 in <user profile>\AppData\Local\pypoetry\Cache\virtualenvs
+Updating dependencies
+Resolving dependencies...
+
+Writing lock file
+prj2 (lock): True
+
+    Directory: <project folder>\poetry_install_error\prj2
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          29.09.2023    10:11            955 poetry.lock
+Using virtualenv: <user profile>\AppData\Local\pypoetry\Cache\virtualenvs\poetry-install-erro-prj2-ZcK0sOQd-py3.8
+Installing dependencies from lock file
+
+Finding the necessary packages for the current system
+
+Package operations: 2 installs, 0 updates, 0 removals
+
+  ò Installing construct (2.10.54)
+  ò Installing future (0.18.3)
+[keyring.backend] Loading KWallet
+[keyring.backend] Loading KWallet
+[keyring.backend] Loading SecretService
+[keyring.backend] Loading SecretService
+[keyring.backend] Loading Windows
+[keyring.backend] Loading Windows
+[win32ctypes.core.ctypes] Loaded ctypes backend
+[keyring.backend] Loading chainer
+[keyring.backend] Loading chainer
+[keyring.backend] Loading libsecret
+[keyring.backend] Loading libsecret
+[keyring.backend] Loading macOS
+[keyring.backend] Loading macOS
+Creating new session for pypi.org
+Creating new session for pypi.org
+Creating new session for files.pythonhosted.org
+[urllib3.connectionpool] Starting new HTTPS connection (1): files.pythonhosted.org:443
+[urllib3.connectionpool] Starting new HTTPS connection (2): files.pythonhosted.org:443
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/30/2f/e2e6bad1b80f744cf5c2a6d622e3dee698b43e6c040f980ae0ac0edd5e54/construct-2.10.54.tar.gz HTTP/1.1" 200 55318
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/8f/2e/cf6accf7415237d6faeeebdc7832023c90e0282aa16fd3263db0eb4715ec/future-0.18.3.tar.gz HTTP/1.1" 200 840896
+[filelock] Attempting to acquire lock 2094190698752 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\6\e\5\8\66e58e1d5a9871eeb3fdb218dcd42517875cf9d10ed56040988e11fe.lock
+[filelock] Lock 2094190698752 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\6\e\5\8\66e58e1d5a9871eeb3fdb218dcd42517875cf9d10ed56040988e11fe.lock
+[filelock] Attempting to release lock 2094190698752 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\6\e\5\8\66e58e1d5a9871eeb3fdb218dcd42517875cf9d10ed56040988e11fe.lock
+[filelock] Lock 2094190698752 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\6\e\5\8\66e58e1d5a9871eeb3fdb218dcd42517875cf9d10ed56040988e11fe.lock
+[filelock] Attempting to acquire lock 2094190945136 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\2\e\0\a\6\2e0a628105013f9723b8d1fb025cca00432dad4b988e44fe414f7e61.lock
+[filelock] Lock 2094190945136 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\2\e\0\a\6\2e0a628105013f9723b8d1fb025cca00432dad4b988e44fe414f7e61.lock
+[filelock] Attempting to release lock 2094190945136 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\2\e\0\a\6\2e0a628105013f9723b8d1fb025cca00432dad4b988e44fe414f7e61.lock
+[filelock] Lock 2094190945136 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\2\e\0\a\6\2e0a628105013f9723b8d1fb025cca00432dad4b988e44fe414f7e61.lock
+
+  Stack trace:
+
+  8  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:286 in _execute_operation
+      284| 
+      285|             try:
+    > 286|                 result = self._do_execute_operation(operation)
+      287|             except EnvCommandError as e:
+      288|                 if e.e.returncode == -2:
+
+  7  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:386 in _do_execute_operation
+      384|             return 0
+      385| 
+    > 386|         result: int = getattr(self, f"_execute_{method}")(operation)
+      387| 
+      388|         if result != 0:
+
+  6  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:511 in _execute_install
+      509| 
+      510|     def _execute_install(self, operation: Install | Update) -> int:
+    > 511|         status_code = self._install(operation)
+      512| 
+      513|         self._save_url_reference(operation)
+
+  5  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:549 in _install
+      547|             archive = self._download_link(operation, Link(package.source_url))
+      548|         else:
+    > 549|             archive = self._download(operation)
+      550| 
+      551|         operation_message = self.get_operation_message(operation)
+
+  4  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:753 in _download
+      751|             self._yanked_warnings.append(message)
+      752| 
+    > 753|         return self._download_link(operation, link)
+      754| 
+      755|     def _download_link(self, operation: Install | Update, link: Link) -> Path:
+
+  3  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\executor.py:800 in _download_link
+      798|             self._write(operation, message)
+      799| 
+    > 800|             archive = self._chef.prepare(archive, output_dir=output_dir)
+      801| 
+      802|         # Use the original archive to provide the correct hash.
+
+  2  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\chef.py:101 in prepare
+       99|             return self._prepare(archive, destination=destination, editable=editable)
+      100| 
+    > 101|         return self._prepare_sdist(archive, destination=output_dir)
+      102| 
+      103|     def _prepare(
+
+  1  ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\chef.py:185 in _prepare_sdist
+      183|             destination.mkdir(parents=True, exist_ok=True)
+      184| 
+    > 185|             return self._prepare(
+      186|                 sdist_dir,
+      187|                 destination,
+
+  ChefBuildError
+
+  Backend 'setuptools.build_meta:__legacy__' is not available.
+
+  at ~\AppData\Roaming\pypoetry\venv\lib\site-packages\poetry\installation\chef.py:147 in _prepare
+      143| 
+      144|                 error = ChefBuildError("\n\n".join(message_parts))
+      145| 
+      146|             if error is not None:
+    > 147|                 raise error from None
+      148| 
+      149|             return path
+      150| 
+      151|     def _prepare_sdist(self, archive: Path, destination: Path | None = None) -> Path:
+
+Note: This error originates from the build backend, and is likely not a problem with poetry but with future (0.18.3) not supporting PEP 517 builds. You can verify this by running 'pip wheel --use-pep517 "future (==0.18.3)"'.
+
+prj2 (1st attempt): False
+-a---          29.09.2023    10:11            955 poetry.lock
+Using virtualenv: <user profile>\AppData\Local\pypoetry\Cache\virtualenvs\poetry-install-erro-prj2-ZcK0sOQd-py3.8
+Installing dependencies from lock file
+
+Finding the necessary packages for the current system
+
+Package operations: 1 install, 0 updates, 0 removals, 1 skipped
+
+  ò Installing construct (2.10.54): Skipped for the following reason: Already installed
+  ò Installing future (0.18.3)
+[keyring.backend] Loading KWallet
+[keyring.backend] Loading SecretService
+[keyring.backend] Loading Windows
+[win32ctypes.core.ctypes] Loaded ctypes backend
+[keyring.backend] Loading chainer
+[keyring.backend] Loading libsecret
+[keyring.backend] Loading macOS
+Creating new session for pypi.org
+prj2 (2nd attempt): True
+Using virtualenv: <user profile>\AppData\Local\pypoetry\Cache\virtualenvs\poetry-install-erro-prj2-ZcK0sOQd-py3.8
+Updating dependencies
+Resolving dependencies...
+   1: fact: poetry-install-erro-prj2 is 0.0.1
+   1: derived: poetry-install-erro-prj2
+   1: fact: poetry-install-erro-prj2 depends on future (0.18.3)
+   1: fact: poetry-install-erro-prj2 depends on construct (2.10.54)
+   1: selecting poetry-install-erro-prj2 (0.0.1)
+   1: derived: construct (==2.10.54)
+   1: derived: future (==0.18.3)
+[keyring.backend] Loading KWallet
+[keyring.backend] Loading SecretService
+[keyring.backend] Loading Windows
+[win32ctypes.core.ctypes] Loaded ctypes backend
+[keyring.backend] Loading chainer
+[keyring.backend] Loading libsecret
+[keyring.backend] Loading macOS
+Creating new session for pypi.org
+Skipping url (https://files.pythonhosted.org/packages/bc/7e/3d9973add2a8a3731fe7ba1e333e6558f04d98c3a7dbd46c0d2c5c0c5b27/construct-2.5.4-reupload.tar.gz) due to invalid version (None)
+Skipping url (https://files.pythonhosted.org/packages/bc/e8/8db5c4d4e4afda5e12a50ba72144e888635aeb329be55806461f6af19bbe/construct-2.5.5-reupload.tar.gz) due to invalid version (None)
+Source (PyPI): 1 packages found for construct 2.10.54
+Source (PyPI): 1 packages found for future 0.18.3
+   1: selecting construct (2.10.54)
+   1: selecting future (0.18.3)
+   1: Version solving took 0.120 seconds.
+   1: Tried 1 solutions.
+
+Finding the necessary packages for the current system
+Source (PyPI): 1 packages found for construct 2.10.54
+Source (PyPI): 1 packages found for future 0.18.3
+
+Package operations: 0 installs, 0 updates, 0 removals, 2 skipped
+
+  ò Installing construct (2.10.54): Skipped for the following reason: Already installed
+  ò Installing future (0.18.3): Skipped for the following reason: Already installed
+
+Writing lock file
+prj2 (re-install): True
+Python 3.8.10
+Poetry (version 1.6.1)
+Creating virtualenv poetry-install-erro-prj2--qG8zX8n-py3.8 in <user profile>\AppData\Local\pypoetry\Cache\virtualenvs
+Updating dependencies
+Resolving dependencies...
+
+Writing lock file
+prj3 (lock): True
+
+    Directory: <project folder>\poetry_install_error\prj3
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          29.09.2023    10:11          38099 poetry.lock
+Using virtualenv: <user profile>\AppData\Local\pypoetry\Cache\virtualenvs\poetry-install-erro-prj2--qG8zX8n-py3.8
+Installing dependencies from lock file
+
+Finding the necessary packages for the current system
+
+Package operations: 10 installs, 0 updates, 0 removals
+
+  ò Installing pycparser (2.21)
+[keyring.backend] Loading KWallet
+[keyring.backend] Loading SecretService
+[keyring.backend] Loading Windows
+[win32ctypes.core.ctypes] Loaded ctypes backend
+[keyring.backend] Loading chainer
+[keyring.backend] Loading libsecret
+[keyring.backend] Loading macOS
+Creating new session for pypi.org
+Creating new session for files.pythonhosted.org
+[urllib3.connectionpool] Starting new HTTPS connection (1): files.pythonhosted.org:443
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl HTTP/1.1" 200 118697
+[filelock] Attempting to acquire lock 2989312310960 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\7\5\8\e\0\758e07d7bdfb8212737d84f4f36245f9f40d44fd1c9ad0df0cf25708.lock
+[filelock] Lock 2989312310960 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\7\5\8\e\0\758e07d7bdfb8212737d84f4f36245f9f40d44fd1c9ad0df0cf25708.lock
+[filelock] Attempting to release lock 2989312310960 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\7\5\8\e\0\758e07d7bdfb8212737d84f4f36245f9f40d44fd1c9ad0df0cf25708.lock
+[filelock] Lock 2989312310960 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\7\5\8\e\0\758e07d7bdfb8212737d84f4f36245f9f40d44fd1c9ad0df0cf25708.lock
+  ò Installing cffi (1.15.1)
+Skipping wheel cffi-1.15.1-cp27-cp27m-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27m-manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27m-manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27mu-manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27mu-manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27m-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp27-cp27m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-macosx_11_0_arm64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-manylinux_2_17_s390x.manylinux2014_s390x.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-musllinux_1_1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp310-cp310-win_amd64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-macosx_11_0_arm64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-musllinux_1_1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp311-cp311-win_amd64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-manylinux_2_17_s390x.manylinux2014_s390x.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp36-cp36m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-manylinux_2_17_s390x.manylinux2014_s390x.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp37-cp37m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-manylinux_2_17_s390x.manylinux2014_s390x.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp38-cp38-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-macosx_11_0_arm64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-manylinux_2_17_s390x.manylinux2014_s390x.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-musllinux_1_1_i686.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-win32.whl as this is not supported by the current environment
+Skipping wheel cffi-1.15.1-cp39-cp39-win_amd64.whl as this is not supported by the current environment
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/c9/e3/0a52838832408cfbbf3a59cb19bcd17e64eb33795c9710ca7d29ae10b5b7/cffi-1.15.1-cp38-cp38-win_amd64.whl HTTP/1.1" 200 178835
+[filelock] Attempting to acquire lock 2989312310672 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\c\4\a\0\0\c4a008080752672074f98c444ee83787774d4f9fecf56329648fd609.lock
+[filelock] Lock 2989312310672 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\c\4\a\0\0\c4a008080752672074f98c444ee83787774d4f9fecf56329648fd609.lock
+[filelock] Attempting to release lock 2989312310672 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\c\4\a\0\0\c4a008080752672074f98c444ee83787774d4f9fecf56329648fd609.lock
+[filelock] Lock 2989312310672 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\c\4\a\0\0\c4a008080752672074f98c444ee83787774d4f9fecf56329648fd609.lock
+  ò Installing argon2-cffi-bindings (21.2.0)
+  ò Installing six (1.16.0)
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-musllinux_1_1_i686.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp36-abi3-win32.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-cp38-abi3-macosx_10_9_universal2.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp37-pypy37_pp73-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp37-pypy37_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp37-pypy37_pp73-win_amd64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp38-pypy38_pp73-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp38-pypy38_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel argon2_cffi_bindings-21.2.0-pp38-pypy38_pp73-win_amd64.whl as this is not supported by the current environment
+[urllib3.connectionpool] Starting new HTTPS connection (2): files.pythonhosted.org:443
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl HTTP/1.1" 200 11053
+[filelock] Attempting to acquire lock 2989311752800 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\3\f\4\9\c\3f49c19c42525485da2c265d82244e942d3619ff5626136ee23992d0.lock
+[filelock] Lock 2989311752800 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\3\f\4\9\c\3f49c19c42525485da2c265d82244e942d3619ff5626136ee23992d0.lock
+[filelock] Attempting to release lock 2989311752800 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\3\f\4\9\c\3f49c19c42525485da2c265d82244e942d3619ff5626136ee23992d0.lock
+[filelock] Lock 2989311752800 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\3\f\4\9\c\3f49c19c42525485da2c265d82244e942d3619ff5626136ee23992d0.lock
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/37/2c/e34e47c7dee97ba6f01a6203e0383e15b60fb85d78ac9a15cd066f6fe28b/argon2_cffi_bindings-21.2.0-cp36-abi3-win_amd64.whl HTTP/1.1" 200 30817
+[filelock] Attempting to acquire lock 2989311752992 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\0\f\1\f\2\0f1f2b3725d49be5385f2cdddf5a200845a9ce36352bf6b55e2abb3d.lock
+[filelock] Lock 2989311752992 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\0\f\1\f\2\0f1f2b3725d49be5385f2cdddf5a200845a9ce36352bf6b55e2abb3d.lock
+[filelock] Attempting to release lock 2989311752992 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\0\f\1\f\2\0f1f2b3725d49be5385f2cdddf5a200845a9ce36352bf6b55e2abb3d.lock
+[filelock] Lock 2989311752992 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\0\f\1\f\2\0f1f2b3725d49be5385f2cdddf5a200845a9ce36352bf6b55e2abb3d.lock
+  ò Installing argon2-cffi (23.1.0)
+  ò Installing construct (2.10.68)
+  ò Installing lxml (4.9.3)
+  ò Installing pycryptodomex (3.19.0)
+  ò Installing python-dateutil (2.8.2)
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-manylinux2010_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-manylinux2010_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27mu-manylinux2010_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27mu-manylinux2010_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27mu-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27mu-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-win32.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp27-cp27m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-macosx_10_9_universal2.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-musllinux_1_1_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-cp35-abi3-win32.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp27-pypy_73-manylinux2010_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp27-pypy_73-win32.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp310-pypy310_pp73-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp310-pypy310_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp310-pypy310_pp73-win_amd64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp39-pypy39_pp73-macosx_10_9_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp39-pypy39_pp73-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl as this is not supported by the current environment
+Skipping wheel pycryptodomex-3.19.0-pp39-pypy39_pp73-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27m-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27m-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27m-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27mu-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27mu-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27m-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp27-cp27m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/a4/6a/e8a041599e78b6b3752da48000b14c8d1e8a04ded09c88c714ba047f34f5/argon2_cffi-23.1.0-py3-none-any.whl HTTP/1.1" 200 15124
+Skipping wheel lxml-4.9.3-cp310-cp310-manylinux_2_28_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp310-cp310-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-macosx_11_0_universal2.whl as this is not supported by the current environment
+[urllib3.connectionpool] Starting new HTTPS connection (3): files.pythonhosted.org:443
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/e0/b7/a4a032e94bcfdff481f2e6fecd472794d9da09f474a2185ed33b2c7cad64/construct-2.10.68.tar.gz HTTP/1.1" 200 57856
+Skipping wheel lxml-4.9.3-cp311-cp311-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-manylinux_2_28_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp311-cp311-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-macosx_11_0_universal2.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-manylinux_2_28_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp312-cp312-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp35-cp35m-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp35-cp35m-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp35-cp35m-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp35-cp35m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp36-cp36m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.manylinux_2_24_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+[urllib3.connectionpool] Starting new HTTPS connection (4): files.pythonhosted.org:443
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp37-cp37m-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.manylinux_2_24_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp38-cp38-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_28_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-musllinux_1_1_aarch64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-musllinux_1_1_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-win32.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-cp39-cp39-win_amd64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp310-pypy310_pp73-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp37-pypy37_pp73-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp37-pypy37_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp37-pypy37_pp73-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp38-pypy38_pp73-macosx_11_0_x86_64.whl as this is not supported by the current environment
+[filelock] Attempting to acquire lock 2989311958320 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\a\4\c\4\5\a4c45d2ebf158e53840119637f6e8c62368203df03bfa979be77f373.lock
+Skipping wheel lxml-4.9.3-pp38-pypy38_pp73-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp38-pypy38_pp73-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp38-pypy38_pp73-win_amd64.whl as this is not supported by the current environment
+[filelock] Lock 2989311958320 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\a\4\c\4\5\a4c45d2ebf158e53840119637f6e8c62368203df03bfa979be77f373.lock
+Skipping wheel lxml-4.9.3-pp39-pypy39_pp73-macosx_11_0_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp39-pypy39_pp73-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_24_i686.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp39-pypy39_pp73-manylinux_2_28_x86_64.whl as this is not supported by the current environment
+Skipping wheel lxml-4.9.3-pp39-pypy39_pp73-win_amd64.whl as this is not supported by the current environment
+[filelock] Attempting to release lock 2989311958320 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\a\4\c\4\5\a4c45d2ebf158e53840119637f6e8c62368203df03bfa979be77f373.lock
+[filelock] Lock 2989311958320 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\a\4\c\4\5\a4c45d2ebf158e53840119637f6e8c62368203df03bfa979be77f373.lock
+[filelock] Attempting to acquire lock 2989311753328 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\1\1\e\7\611e7bb4cd0ba42947a35b0fe069f4aab4ac7ce5f5c040bcd10baef2.lock
+[filelock] Lock 2989311753328 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\1\1\e\7\611e7bb4cd0ba42947a35b0fe069f4aab4ac7ce5f5c040bcd10baef2.lock
+[filelock] Attempting to release lock 2989311753328 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\1\1\e\7\611e7bb4cd0ba42947a35b0fe069f4aab4ac7ce5f5c040bcd10baef2.lock
+[filelock] Lock 2989311753328 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\6\1\1\e\7\611e7bb4cd0ba42947a35b0fe069f4aab4ac7ce5f5c040bcd10baef2.lock
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/7a/2f/61afbbb627e910d83613f198ceea270376f6708f52a95b534db10c67b4eb/lxml-4.9.3-cp38-cp38-win_amd64.whl HTTP/1.1" 200 3903642
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl HTTP/1.1" 200 247702
+[urllib3.connectionpool] https://files.pythonhosted.org:443 "GET /packages/3c/a4/81675804055339db8e277f48bf0012b554a2322f15d000caebf7c8d3f011/pycryptodomex-3.19.0-cp35-abi3-win_amd64.whl HTTP/1.1" 200 1743221
+[filelock] Attempting to acquire lock 2989311791648 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\1\5\8\5\6\15856d84ee205815a9da20d464181272415376d8ef0d14a6313288ea.lock
+[filelock] Lock 2989311791648 acquired on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\1\5\8\5\6\15856d84ee205815a9da20d464181272415376d8ef0d14a6313288ea.lock
+[filelock] Attempting to release lock 2989311791648 on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\1\5\8\5\6\15856d84ee205815a9da20d464181272415376d8ef0d14a6313288ea.lock
+[filelock] Lock 2989311791648 released on <user profile>\AppData\Local\pypoetry\Cache\cache\repositories\_default_cache\_http\1\5\8\5\6\15856d84ee205815a9da20d464181272415376d8ef0d14a6313288ea.lock
+  ò Installing pykeepass (4.0.6)
+prj3 (1st attempt): True
+-a---          29.09.2023    10:11          38099 poetry.lock
+Using virtualenv: <user profile>\AppData\Local\pypoetry\Cache\virtualenvs\poetry-install-erro-prj2--qG8zX8n-py3.8
+Installing dependencies from lock file
+
+Finding the necessary packages for the current system
+
+Package operations: 0 installs, 0 updates, 0 removals, 10 skipped
+
+  ò Installing argon2-cffi (23.1.0): Skipped for the following reason: Already installed
+  ò Installing argon2-cffi-bindings (21.2.0): Skipped for the following reason: Already installed
+  ò Installing cffi (1.15.1): Skipped for the following reason: Already installed
+  ò Installing construct (2.10.68): Skipped for the following reason: Already installed
+  ò Installing lxml (4.9.3): Skipped for the following reason: Already installed
+  ò Installing pycparser (2.21): Skipped for the following reason: Already installed
+  ò Installing pycryptodomex (3.19.0): Skipped for the following reason: Already installed
+  ò Installing pykeepass (4.0.6): Skipped for the following reason: Already installed
+  ò Installing python-dateutil (2.8.2): Skipped for the following reason: Already installed
+  ò Installing six (1.16.0): Skipped for the following reason: Already installed
+prj3 (2nd attempt): True
+Using virtualenv: <user profile>\AppData\Local\pypoetry\Cache\virtualenvs\poetry-install-erro-prj2--qG8zX8n-py3.8
+Updating dependencies
+Resolving dependencies...
+   1: fact: poetry-install-erro-prj2 is 0.0.1
+   1: derived: poetry-install-erro-prj2
+   1: fact: poetry-install-erro-prj2 depends on pykeepass (~4.0.1)
+   1: selecting poetry-install-erro-prj2 (0.0.1)
+   1: derived: pykeepass (>=4.0.1,<4.1.0)
+[keyring.backend] Loading KWallet
+[keyring.backend] Loading SecretService
+[keyring.backend] Loading Windows
+[win32ctypes.core.ctypes] Loaded ctypes backend
+[keyring.backend] Loading chainer
+[keyring.backend] Loading libsecret
+[keyring.backend] Loading macOS
+Creating new session for pypi.org
+Source (PyPI): 7 packages found for pykeepass >=4.0.1,<4.1.0
+   1: fact: pykeepass (4.0.6) depends on argon2_cffi (*)
+   1: fact: pykeepass (4.0.6) depends on construct (*)
+   1: fact: pykeepass (4.0.6) depends on lxml (*)
+   1: fact: pykeepass (4.0.6) depends on pycryptodomex (>=3.6.2)
+   1: fact: pykeepass (4.0.6) depends on python-dateutil (*)
+   1: selecting pykeepass (4.0.6)
+   1: derived: python-dateutil
+   1: derived: pycryptodomex (>=3.6.2)
+   1: derived: lxml
+   1: derived: construct
+   1: derived: argon2_cffi
+Source (PyPI): 25 packages found for python-dateutil *
+Source (PyPI): 33 packages found for pycryptodomex >=3.6.2
+Source (PyPI): 122 packages found for lxml *
+Skipping url (https://files.pythonhosted.org/packages/bc/7e/3d9973add2a8a3731fe7ba1e333e6558f04d98c3a7dbd46c0d2c5c0c5b27/construct-2.5.4-reupload.tar.gz) due to invalid version (None)
+Skipping url (https://files.pythonhosted.org/packages/bc/e8/8db5c4d4e4afda5e12a50ba72144e888635aeb329be55806461f6af19bbe/construct-2.5.5-reupload.tar.gz) due to invalid version (None)
+Source (PyPI): 72 packages found for construct *
+Source (PyPI): 16 packages found for argon2-cffi *
+   1: selecting lxml (4.9.3)
+   1: selecting construct (2.10.68)
+   1: selecting pycryptodomex (3.19.0)
+   1: fact: python-dateutil (2.8.2) depends on six (>=1.5)
+   1: selecting python-dateutil (2.8.2)
+   1: derived: six (>=1.5)
+Source (PyPI): 18 packages found for six >=1.5
+   1: selecting six (1.16.0)
+   1: fact: argon2-cffi (23.1.0) depends on argon2-cffi-bindings (*)
+   1: fact: argon2-cffi (23.1.0) depends on typing-extensions (*)
+   1: selecting argon2-cffi (23.1.0)
+   1: derived: typing-extensions
+   1: derived: argon2-cffi-bindings
+Source (PyPI): 27 packages found for typing-extensions *
+Source (PyPI): 2 packages found for argon2-cffi-bindings *
+   1: fact: argon2-cffi-bindings (21.2.0) depends on cffi (>=1.0.1)
+   1: selecting argon2-cffi-bindings (21.2.0)
+   1: derived: cffi (>=1.0.1)
+Source (PyPI): 46 packages found for cffi >=1.0.1
+   1: fact: cffi (1.16.0) requires Python >=3.8
+   1: derived: not cffi (==1.16.0)
+   1: fact: cffi (1.15.1) depends on pycparser (*)
+   1: selecting cffi (1.15.1)
+   1: derived: pycparser
+Source (PyPI): 21 packages found for pycparser *
+   1: selecting pycparser (2.21)
+   1: fact: typing-extensions (4.8.0) requires Python >=3.8
+   1: derived: not typing-extensions (==4.8.0)
+   1: selecting typing-extensions (4.7.1)
+   1: Version solving took 0.413 seconds.
+   1: Tried 1 solutions.
+
+Finding the necessary packages for the current system
+Source (PyPI): 1 packages found for pykeepass >=4.0.1,<4.1.0
+Source (PyPI): 1 packages found for python-dateutil *
+Source (PyPI): 1 packages found for pycryptodomex >=3.6.2
+Source (PyPI): 1 packages found for lxml *
+Source (PyPI): 1 packages found for construct *
+Source (PyPI): 1 packages found for argon2-cffi *
+Source (PyPI): 1 packages found for six >=1.5
+Source (PyPI): 1 packages found for argon2-cffi-bindings *
+Source (PyPI): 1 packages found for cffi >=1.0.1
+Source (PyPI): 1 packages found for pycparser *
+
+Package operations: 0 installs, 0 updates, 0 removals, 10 skipped
+
+  ò Installing argon2-cffi (23.1.0): Skipped for the following reason: Already installed
+  ò Installing argon2-cffi-bindings (21.2.0): Skipped for the following reason: Already installed
+  ò Installing cffi (1.15.1): Skipped for the following reason: Already installed
+  ò Installing construct (2.10.68): Skipped for the following reason: Already installed
+  ò Installing lxml (4.9.3): Skipped for the following reason: Already installed
+  ò Installing pycparser (2.21): Skipped for the following reason: Already installed
+  ò Installing pycryptodomex (3.19.0): Skipped for the following reason: Already installed
+  ò Installing pykeepass (4.0.6): Skipped for the following reason: Already installed
+  ò Installing python-dateutil (2.8.2): Skipped for the following reason: Already installed
+  ò Installing six (1.16.0): Skipped for the following reason: Already installed
+
+Writing lock file
+prj3 (re-install): True
+

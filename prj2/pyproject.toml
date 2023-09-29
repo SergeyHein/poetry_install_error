@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetry_install_erro_prj2"
+version = "0.0.1"
+description = "poetry_install_erro_prj2"
+authors = ["Sergey"]
+license = "Proprietary"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.9"
+future="0.18.3"
+construct="2.10.54"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
