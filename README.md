@@ -33,7 +33,7 @@ Run reproduce_github_poetry_issue.ps1
 python = ">=3.7,<3.9"
 pykeepass = "4.0.1"
 
-First install failes, second successeds
+First install fails, second succeeds
 ## Project 2
 
 [tool.poetry.dependencies]
@@ -41,7 +41,7 @@ python = ">=3.7,<3.9"
 future="0.18.3"
 construct="2.10.54"
 
-First install failes, second successeds
+First install fails, second succeeds
 
 ## Project 3
 
@@ -49,4 +49,4 @@ First install failes, second successeds
 python = ">=3.7,<3.9"
 pykeepass = "~4.0.1"
 
-First install successeds, second successeds
+First install succeeds, second succeeds
